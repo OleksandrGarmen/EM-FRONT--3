@@ -74,8 +74,9 @@ const cheap = data.reduce((min, product) => product.price < min.price ? product 
 console.log([ { name: cheap.name, price: cheap.price } ]);
 console.log([ { name: expensive.name, price: expensive.price } ]);
 
-
-
+//TASK #10 | LEVEL #2 
+const average = data.reduce((acc, product) => acc + product.rating, 0) / data.length;
+console.log(average);
 
 //TASK #12 | LEVEL #2 
 const quantities = data.map(product => product.reviews.length).reduce((acc, reviewsCount) => acc + reviewsCount, 0);
