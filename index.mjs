@@ -56,13 +56,13 @@ console.log( rating);
 
 
 //TASK #6 | LEVEL #1 | REDUCE
-const total = data.reduce((accumulator,  product) => accumulator  + product.price, 0);
+const total = data.reduce((accumulator,   product) => accumulator  + product.price, 0);
 console.log(total);
 
 
 
 //TASK #7 | LEVEL #1 | REDUCE
-const average = data.reduce((accumulator,  product) => accumulator + product.price, 0) / data.length;
+const average = data.reduce((accumulator,   product) => accumulator + product.price, 0) / data.length;
 console.log(average);
 
 
@@ -75,9 +75,9 @@ console.log([ { name: cheap.name, price: cheap.price } ]);
 console.log([ { name: expensive.name, price: expensive.price } ]);
 
 //TASK #10 | LEVEL #2 
-const average = data.reduce(( acc, product) => acc + product.rating, 0) / data.length;
+const average =  data.reduce(( acc, product) => acc + product.rating, 0) / data.length;
 console.log(average);
 
 //TASK #12 | LEVEL #2 
-const quantities = data.map( product => product.reviews.length).reduce((acc, reviewsCount) => acc + reviewsCount, 0);
+const quantities = data.map( product =>  product.reviews.length).reduce((acc, reviewsCount) => acc + reviewsCount, 0);
 console.log(quantities);
